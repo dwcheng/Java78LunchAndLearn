@@ -1,0 +1,29 @@
+<section>
+    Iterators
+    <pre><code class="java" data-trim>
+for (int i = 0; i < numbers.size(); i++) {
+    System.out.println(numbers.get(i));
+}
+    </code></pre>
+</section>
+
+<section>
+    Iterators
+    <pre><code class="java" data-trim>
+for (int i : numbers) {
+    System.out.println(numbers.get(i));
+}
+    </code></pre>
+</section>
+
+<section>
+    Iterators
+    <pre><code class="java" data-trim>
+numbers.forEach(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept(Integer integer) {
+        System.out.println(integer);
+    }
+});
+    </code></pre>
+</section>
