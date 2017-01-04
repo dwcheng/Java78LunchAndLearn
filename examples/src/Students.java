@@ -1,5 +1,3 @@
-package lambdas;
-
 public class Students {
     private String name;
     private int grade;

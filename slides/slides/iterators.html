@@ -27,3 +27,42 @@ numbers.forEach(new Consumer&lt;Integer&gt;() {
 });
     </code></pre>
 </section>
+
+<section>
+    Iterators
+    <pre><code class="java" data-trim data-noescape>
+    numbers.forEach(<u>new Consumer&lt;Integer&gt;() {</u>
+    <u>@Override</u>
+    <u>public void accept</u>(Integer integer) <u>{</u>
+        System.out.println(integer);
+    <u>}</u>
+<u>});</u>
+    </code></pre>
+    Declaration
+</section>
+
+<section>
+    Iterators
+    <pre><code class="java" data-trim data-noescape>
+numbers.forEach(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept<u>(Integer integer)</u> {
+        System.out.println(integer);
+    }
+});
+    </code></pre>
+    Parameters
+</section>
+
+<section>
+    Iterators
+    <pre><code class="java" data-trim data-noescape>
+numbers.forEach(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept(Integer integer) {
+        <u>System.out.println(integer);</u>
+    }
+});
+    </code></pre>
+    Body
+</section>
