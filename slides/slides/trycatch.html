@@ -1,0 +1,29 @@
+<section>
+    Try Catch With Resources
+    <pre><code class="java" data-trim>
+InputStream inputStream = null;
+try {
+    inputStream = new FileInputStream(new File("foo.txt"));
+    // Do stuff
+} catch (FileNotFoundException e) {
+    // Handle FileNotFoundException
+} finally {
+    try {
+        inputStream.close();
+    } catch (IOException e) {
+        // Handle IOException
+    }
+}
+    </code></pre>
+</section>
+
+<section>
+    Try Catch With Resources
+    <pre><code style="font-size: 90%" class="java" data-trim>
+try (InputStream inputStream = new FileInputStream(new File("foo.txt"))) {
+    // Do stuff
+} catch (IOException e) {
+    // Handle exception
+}
+    </code></pre>
+</section>
