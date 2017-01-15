@@ -1,35 +1,135 @@
 <section>
+    Comparators
     <pre><code class="java" data-trim>
-class Student {
-    private String name;
-    private int grade;
-
-    Student(String name, int grade) {
-        this.name = name;
-        this.grade = grade;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getGrade() {
-        return grade;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-}
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare(String o1, String o2) {
+                return Integer.compare(o1.length(), o2.length());
+            }
+        });
     </code></pre>
+    <ul>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+    </ul>
 </section>
 
 <section>
-    <pre><code class="java" data-trim>
-
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
+            <u>@Override</u>
+            <u>public int compare</u>(String o1, String o2) <u>{</u>
+                return Integer.compare(o1.length(), o2.length());
+            <u>}</u>
+        <u>}</u>);
     </code></pre>
+    <ul>
+        <li>Declaration</li>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare<u>(String o1, String o2)</u> {
+                return Integer.compare(o1.length(), o2.length());
+            }
+        });
+    </code></pre>
+    <ul>
+        <li style="opacity: 0.2">Declaration</li>
+        <li>Parameters</li>
+        <li style="visibility: hidden"></li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare(String o1, String o2) {
+                <u>return Integer.compare(o1.length(), o2.length());</u>
+            }
+        });
+    </code></pre>
+    <ul>
+        <li style="opacity: 0.2;">Declaration</li>
+        <li style="opacity: 0.2">Parameters</li>
+        <li>Body</li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare(String o1, String o2) {
+                return Integer.compare(o1.length(), o2.length());
+            }
+        });
+    </code></pre>
+    <ul>
+        <li>Declaration</li>
+        <li>Parameters</li>
+        <li>Body</li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
+            <u>@Override</u>
+            <u>public int compare</u>(String o1, String o2) <u>{</u>
+                return Integer.compare(o1.length(), o2.length());
+            <u>}</u>
+        <u>}</u>);
+    </code></pre>
+    <ul>
+        <li><strike>Declaration</strike></li>
+        <li>Parameters</li>
+        <li>Body</li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare<u>(String o1, String o2)</u> {
+                return Integer.compare(o1.length(), o2.length());
+            }
+        });
+    </code></pre>
+    <ul>
+        <li style="opacity: 0.2"><strike>Declaration</strike></li>
+        <li><strike>Parameters</strike></li>
+        <li>Body</li>
+    </ul>
+</section>
+
+<section>
+    Comparators
+    <pre><code class="java" data-trim data-noescape>
+        Collections.sort(names, new Comparator&lt;String&gt;() {
+            @Override
+            public int compare(String o1, String o2) {
+                <u>return Integer.compare(o1.length(), o2.length());</u>
+            }
+        });
+    </code></pre>
+    <ul>
+        <li style="opacity: 0.2"><strike>Declaration</strike></li>
+        <li style="opacity: 0.2"><strike>Parameters</strike></li>
+        <li>Body</li>
+    </ul>
 </section>
