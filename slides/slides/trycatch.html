@@ -4,14 +4,14 @@
 InputStream inputStream = null;
 try {
     inputStream = new FileInputStream(new File("foo.txt"));
-    // Do stuff
+    //Do stuff
 } catch (FileNotFoundException e) {
-    // Handle FileNotFoundException
+    //Handle FileNotFoundException
 } finally {
     try {
         inputStream.close();
     } catch (IOException e) {
-        // Handle IOException
+        //Handle IOException
     }
 }
     </code></pre>
@@ -21,9 +21,9 @@ try {
     Try Catch With Resources
     <pre><code style="font-size: 90%" class="java" data-trim>
 try (InputStream inputStream = new FileInputStream(new File("foo.txt"))) {
-    // Do stuff
+    //Do stuff
 } catch (IOException e) {
-    // Handle exception
+    //Handle exception
 }
     </code></pre>
 </section>
