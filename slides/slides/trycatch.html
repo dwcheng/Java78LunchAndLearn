@@ -1,19 +1,19 @@
 <section>
     Try Catch With Resources
-    <pre><code class="java" data-trim>
+    <pre><code class="java" data-trim data-noescape>
 InputStream inputStream = null;
-try {
+<span class="fragment">try {
     inputStream = new FileInputStream(new File("foo.txt"));
     //Do stuff
-} catch (FileNotFoundException e) {
+}</span> <span class="fragment">catch (FileNotFoundException e) {
     //Handle FileNotFoundException
-} finally {
+}</span> <span class="fragment">finally {
     try {
         inputStream.close();
-    } catch (IOException e) {
+    }</span> <span class="fragment">catch (IOException e) {
         //Handle IOException
     }
-}
+}</span>
     </code></pre>
 </section>
 
