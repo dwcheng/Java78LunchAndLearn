@@ -1,5 +1,5 @@
 <section>
-Diamond Operator
+    Diamond Operator
     <pre><code class="java" data-trim data-noescape>
 List&lt;Integer&gt; numbers = new ArrayList&lt;Integer&gt;;
 <div class="fragment">List&lt;Integer&gt; numbers = new ArrayList&lt;&gt;;</div>
@@ -14,3 +14,22 @@ Map&lt;String, List&lt;String&gt;&gt; anagrams = new HashMap&lt;String, List&lt;
     </code></pre>
 </section>
 
+<section>
+    Use Cases
+    <br>
+    <ul>
+        <li class="fragment">Pretty much anywhere</li>
+    </ul>
+</section>
+
+<section>
+    Use Cases
+    <pre><code class="java" data-trim data-noescape>
+Set&lt;Person&gt; candidates;
+<span class="fragment">if (someCondition) {
+    candidates = new LinkedHashSet&lt;&gt;();
+    // tons of code
+}</span><span class="fragment"> else {
+    candidates = new HashSet&lt;Person&gt;();
+}</span></code></pre>
+</section>
