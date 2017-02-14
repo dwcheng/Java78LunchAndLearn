@@ -1,0 +1,33 @@
+Hi everyone and welcome to my presentation on Java 7 and 8
+For those of you who don't know me, my name's Daniel Cheng
+I'm a dev on the RESP team and sit all the way at the end near the project coordinators
+
+So before we begin, I'd like to remind everyone that we're not actually allowed to use any of these features yet
+So if you want to stay out of trouble, the easiest way to do that is to go to your Eclipse settings and set your compliance level to 1.6
+That way, if you try to use any of these amazing new features, you'll get a handy warning telling you that you are in fact, not allowed to have fun
+
+This talk is a little different in that it's a collection of independent tips and tricks
+For each feature, I'll go over the Java 6 and below way
+Then I'll introduce a different way
+I'm calling it a different way because if you wanted to, you can pretty much get by without using any of these
+And like any decision you make, you're faced with tradeoffs
+
+Each of these features are pretty much independent of each other, so feel free to ask questions anytime.
+I'm learning just like you guys, so if you hear anything that you disagree with, feel free to correct me.
+
+So to start off we have the Diamond Operator
+Here we have our ArrayList of Integers
+New in Java 7 is the ability for the compiler to infer what type you wanted to pass to the constructor
+Pretty nice when you only have to pass one type
+Even better when you have multiple
+I've arranged these features in roughly the order I think you'll find a use for them
+And for this one, pretty much anywhere
+You could make an argument for passing in the type explicitly if there's a large gap between the variable declaration and the constructor
+So for example, you have a Set of People, and for some condition, you care what order they're passed in, so you create a LinkedHashSet
+And then way down, maybe a page or so, if that condition wasn't met, you don't care about the order of the people, so you create a plain old HashSet
+
+Next we have underscores
+Now, take a moment and look at this number
+It's not immediately obvious how large it is, especially because there are so many consecutive zeroes
+With Java 7
+The compiler will treat these exactly the same as any other number, including arithmetic and printing
