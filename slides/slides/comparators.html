@@ -29,12 +29,12 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
-    <mark>@Override</mark>
-    <mark>public int compare</mark>(String o1, String o2) <mark>{</mark>
-        return Integer.compare(o1.length(), o2.length());
-    <mark>}</mark>
-<mark>}</mark>);
+<span style="opacity: 0.2">Collections.sort(names,</span> new Comparator&lt;String&gt;() {
+    @Override
+    public int compare<span style="opacity: 0.2">(String o1, String o2) {
+        return Integer.compare(o1.length(), o2.length());</span>
+    }
+<span style="opacity: 0.2">});</span>
     </code></pre>
     <br>
     <ul>
@@ -48,12 +48,12 @@ Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, new Comparator&lt;String&gt;() {
+<span style="opacity: 0.2">Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
-    public int compare<mark>(String o1, String o2)</mark> {
+    public int compare</span>(String o1, String o2)<span style="opacity: 0.2"> {
         return Integer.compare(o1.length(), o2.length());
     }
-});
+});</span>
     </code></pre>
     <br>
     <ul>
@@ -67,12 +67,12 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, new Comparator&lt;String&gt;() {
+<span style="opacity: 0.2">Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
-    public int compare(String o1, String o2) {
-        <mark>return Integer.compare(o1.length(), o2.length());</mark>
-    }
-});
+    public int compare(String o1, String o2) { </span>
+        return Integer.compare(o1.length(), o2.length());
+    <span style="opacity: 0.2">}
+});</span>
     </code></pre>
     <br>
     <ul>
@@ -105,12 +105,12 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
-    <mark>@Override</mark>
-    <mark>public int compare</mark>(String o1, String o2) <mark>{</mark>
+Collections.sort(names, <span style="opacity: 0.2">new Comparator&lt;String&gt;() {
+    @Override
+    public int compare</span>(String o1, String o2) {
         return Integer.compare(o1.length(), o2.length());
-    <mark>}</mark>
-<mark>}</mark>);
+    <span style="opacity: 0.2">}</span>
+});
     </code></pre>
     <br>
     <ul>
@@ -124,11 +124,11 @@ Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, new Comparator&lt;String&gt;() {
+Collections.sort(names, <span style="opacity: 0.2">new Comparator&lt;String&gt;() {
     @Override
-    public int compare<mark>(String o1, String o2)</mark> {
+    public int compare</span>(<span style="opacity: 0.2">String</span> o1, <span style="opacity: 0.2">String</span> o2) {
         return Integer.compare(o1.length(), o2.length());
-    }
+    <span style="opacity: 0.2">}</span>
 });
     </code></pre>
     <br>
@@ -143,11 +143,11 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, new Comparator&lt;String&gt;() {
+Collections.sort(names, <span style="opacity: 0.2">new Comparator&lt;String&gt;() {
     @Override
-    public int compare(String o1, String o2) {
-        <mark>return Integer.compare(o1.length(), o2.length());</mark>
-    }
+    public int compare</span>(<span style="opacity: 0.2">String</span> o1, <span style="opacity: 0.2">String</span> o2) {
+        return Integer.compare(o1.length(), o2.length());
+    <span style="opacity: 0.2">}</span>
 });
     </code></pre>
     <br>
