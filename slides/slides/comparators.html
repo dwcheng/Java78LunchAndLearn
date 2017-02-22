@@ -29,12 +29,12 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
-    <u>@Override</u>
-    <u>public int compare</u>(String o1, String o2) <u>{</u>
+Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
+    <mark>@Override</mark>
+    <mark>public int compare</mark>(String o1, String o2) <mark>{</mark>
         return Integer.compare(o1.length(), o2.length());
-    <u>}</u>
-<u>}</u>);
+    <mark>}</mark>
+<mark>}</mark>);
     </code></pre>
     <br>
     <ul>
@@ -50,7 +50,7 @@ Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
     <pre><code class="java" data-trim data-noescape>
 Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
-    public int compare<u>(String o1, String o2)</u> {
+    public int compare<mark>(String o1, String o2)</mark> {
         return Integer.compare(o1.length(), o2.length());
     }
 });
@@ -70,7 +70,7 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
 Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
     public int compare(String o1, String o2) {
-        <u>return Integer.compare(o1.length(), o2.length());</u>
+        <mark>return Integer.compare(o1.length(), o2.length());</mark>
     }
 });
     </code></pre>
@@ -105,12 +105,12 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
     Lambda Expressions
     <br>
     <pre><code class="java" data-trim data-noescape>
-Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
-    <u>@Override</u>
-    <u>public int compare</u>(String o1, String o2) <u>{</u>
+Collections.sort(names, <mark>new Comparator&lt;String&gt;() {</mark>
+    <mark>@Override</mark>
+    <mark>public int compare</mark>(String o1, String o2) <mark>{</mark>
         return Integer.compare(o1.length(), o2.length());
-    <u>}</u>
-<u>}</u>);
+    <mark>}</mark>
+<mark>}</mark>);
     </code></pre>
     <br>
     <ul>
@@ -126,7 +126,7 @@ Collections.sort(names, <u>new Comparator&lt;String&gt;() {</u>
     <pre><code class="java" data-trim data-noescape>
 Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
-    public int compare<u>(String o1, String o2)</u> {
+    public int compare<mark>(String o1, String o2)</mark> {
         return Integer.compare(o1.length(), o2.length());
     }
 });
@@ -146,7 +146,7 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
 Collections.sort(names, new Comparator&lt;String&gt;() {
     @Override
     public int compare(String o1, String o2) {
-        <u>return Integer.compare(o1.length(), o2.length());</u>
+        <mark>return Integer.compare(o1.length(), o2.length());</mark>
     }
 });
     </code></pre>
@@ -156,4 +156,62 @@ Collections.sort(names, new Comparator&lt;String&gt;() {
         <li style="opacity: 0.2"><strike>Parameters</strike></li>
         <li>Body</li>
     </ul>
+</section>
+
+<section>
+    Quick Recap
+    <pre><code class="java" data-trim data-noescape>
+        (Type variableName, Type2 variableName2, ...) -> Foo.Func(variableName, variableName2, ...)
+    </code></pre>
+</section>
+
+<section>
+    Parameters
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        (Type variableName, Type2 variableName2, ...) <span style="opacity: 0.2">-> Foo.Func(variableName, variableName2, ...)</span>
+    </code></pre>
+    <br>
+</section>
+
+<section>
+    Parameters
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        (variableName, variableName2, ...) <span style="opacity: 0.2">-> Foo.Func(variableName, variableName2, ...)</span>
+    </code></pre>
+    <br>
+</section>
+
+<section>
+    Parameters
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        variableName <span style="opacity: 0.2">-> Foo.Func(variableName)</span>
+    </code></pre>
+    <br>
+</section>
+
+<section>
+    Quick Recap
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        <span style="opacity: 0.2">variableName</span> -> <span style="opacity: 0.2">Foo.Func(variableName)</span>
+    </code></pre>
+</section>
+
+<section>
+    Quick Recap
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        <span style="opacity: 0.2">variableName -> </span>Foo.Func(variableName)
+    </code></pre>
+</section>
+
+<section>
+    Quick Recap
+    <br>
+    <pre><code class="java" data-trim data-noescape>
+        <span style="opacity: 0.2">variableName -> </span>Foo::Func
+    </code></pre>
 </section>
