@@ -1,8 +1,8 @@
 public class Underscores {
     public static void main(String[] args) {
-        int numWithUnderscores = 10_000_000;
+        int numWithUnderscores = 1_000;
 
         System.out.println(numWithUnderscores);
-        System.out.println(numWithUnderscores - 1000);
+        System.out.println(numWithUnderscores - 500);
     }
 }

@@ -8,10 +8,8 @@ That way, if you try to use any of these amazing new features, you'll get a hand
 
 This talk is a little different in that it's a collection of independent tips and tricks
 For each feature, I'll go over the Java 6 and below way
-Then I'll introduce a different way
-I'm calling it a different way because if you wanted to, you can pretty much get by without using any of these
-And like any decision you make, you're faced with tradeoffs
-
+Then I'll introduce the Java 7 and above way
+After that I'll go over at least one use case
 Each of these features are pretty much independent of each other, so feel free to ask questions anytime.
 I'm learning just like you guys, so if you hear anything that you disagree with, feel free to correct me.
 
