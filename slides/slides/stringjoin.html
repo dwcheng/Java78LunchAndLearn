@@ -4,16 +4,16 @@
     <pre><code class="java" data-trim data-noescape>
 String[] names = {"John", "Josh", "Bob", "Alex"};
 
-StringBuilder stringBuilder = new StringBuilder(names.length);
+<span class="fragment">StringBuilder stringBuilder = new StringBuilder(names.length);</span>
 
-for (int i = 0; i < names.length; i++) {
+<span class="fragment">for (int i = 0; i < names.length; i++) {
     stringBuilder.append(names[i]);
     if (i < names.length - 1) {
         stringBuilder.append(", ");
     }
-}
+}</span>
 
-return stringBuilder.toString();
+<span class="fragment">return stringBuilder.toString();</span>
     </code></pre>
 </section>
 
@@ -23,6 +23,6 @@ return stringBuilder.toString();
     <pre><code class="java" data-trim>
 String[] names = {"John", "Josh", "Bob", "Alex"};
 
-String.join(", ", Arrays.asList(names));
+return String.join(", ", Arrays.asList(names));
     </code></pre>
 </section>
