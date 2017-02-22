@@ -9,10 +9,7 @@ public class TryCatchExample {
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(new File("foo.txt"));
-            int content;
-            while ((content = inputStream.read()) != -1) {
-                System.out.print((char) content);
-            }
+            printFileContents(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -21,6 +18,13 @@ public class TryCatchExample {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private static void printFileContents(InputStream inputStream) throws IOException {
+        int content;
+        while ((content = inputStream.read()) != -1) {
+            System.out.print((char) content);
         }
     }
 }
