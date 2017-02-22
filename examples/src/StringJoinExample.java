@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-class StringJoin {
+class StringJoinExample {
     public static void main(String[] args) {
         String[] names = {"John", "Josh", "Bob", "Alex"};
         System.out.println(joinWithCommas(names));

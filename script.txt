@@ -24,6 +24,10 @@ You could make an argument for passing in the type explicitly if there's a large
 So for example, you have a Set of People, and for some condition, you care what order they're passed in, so you create a LinkedHashSet
 And then way down, maybe a page or so, if that condition wasn't met, you don't care about the order of the people, so you create a plain old HashSet
 
+You can think of it as a reverse string split
+
+In cases where you're worried about integer overflow multiplyExact will throw an error instead of silently returning the wrong answer.
+
 Next we have underscores
 Now, take a moment and look at this number
 It's not immediately obvious how large it is, especially because there are so many consecutive zeroes
