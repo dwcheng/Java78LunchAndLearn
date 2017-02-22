@@ -1,3 +1,75 @@
 <section>
+Streams
+    <br>
+    <pre><code class="java" data-trim data-noescape="">
+Predicate&lt;Product&gt; isExpensive = p -> p.getPrice() > 5;
+products.stream()
+        .filter(Product::isEssential)
+        .filter(isExpensive)
+        .map(Product::getName)
+        .forEach(System.out::println);
+    </code></pre>
+    <br>
+    <ul>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+    </ul>
+</section>
 
+<section>
+Streams
+    <br>
+    <pre><code class="java" data-trim data-noescape="">
+<span style="opacity: 0.2">Predicate&lt;Product&gt; isExpensive = p -> p.getPrice() > 5;</span>
+products.stream()
+        <span style="opacity: 0.2">.filter(Product::isEssential)
+        .filter(isExpensive)
+        .map(Product::getName)
+        .forEach(System.out::println);</span>
+    </code></pre>
+    <br>
+    <ul>
+        <li>Initializer</li>
+        <li style="visibility: hidden"></li>
+        <li style="visibility: hidden"></li>
+    </ul>
+</section>
+
+<section>
+    Streams
+    <br>
+    <pre><code class="java" data-trim data-noescape="">
+<span style="opacity: 0.2">Predicate&lt;Product&gt; isExpensive = p -> p.getPrice() > 5;
+products.stream()</span>
+        .filter(Product::isEssential)
+        .filter(isExpensive)
+        .map(Product::getName)
+        <span style="opacity: 0.2">.forEach(System.out::println);</span>
+    </code></pre>
+    <br>
+    <ul>
+        <li style="opacity: 0.2">Initializer</li>
+        <li>Intermediary</li>
+        <li style="visibility: hidden"></li>
+    </ul>
+</section>
+
+<section>
+    Streams
+    <br>
+    <pre><code class="java" data-trim data-noescape="">
+<span style="opacity: 0.2">Predicate&lt;Product&gt; isExpensive = p -> p.getPrice() > 5;
+products.stream()
+        .filter(Product::isEssential)
+        .filter(isExpensive)
+        .map(Product::getName)</span>
+        .forEach(System.out::println);
+    </code></pre>
+    <br>
+    <ul>
+        <li style="opacity: 0.2">Initializer</li>
+        <li style="opacity: 0.2">Intermediary</li>
+        <li>Terminal</li>
+    </ul>
 </section>
