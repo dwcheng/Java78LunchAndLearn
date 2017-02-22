@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class StringJoin {
     public static void main(String[] args) {
         String[] names = {"John", "Josh", "Bob", "Alex"};
