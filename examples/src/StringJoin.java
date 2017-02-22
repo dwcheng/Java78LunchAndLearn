@@ -1,14 +1,14 @@
 class StringJoin {
     public static void main(String[] args) {
-        int[] nums = {1, 5, 7, 12, 5, 2, 7};
-        System.out.println(joinWithCommas(nums));
+        String[] names = {"John", "Josh", "Bob", "Alex"};
+        System.out.println(joinWithCommas(names));
     }
 
-    private static String joinWithCommas(int[] nums) {
-        StringBuilder stringBuilder = new StringBuilder(nums.length);
-        for (int i = 0; i < nums.length; i++) {
-            stringBuilder.append(nums[i]);
-            if (i < nums.length - 1) {
+    private static String joinWithCommas(String[] names) {
+        StringBuilder stringBuilder = new StringBuilder(names.length);
+        for (int i = 0; i < names.length; i++) {
+            stringBuilder.append(names[i]);
+            if (i < names.length - 1) {
                 stringBuilder.append(", ");
             }
         }

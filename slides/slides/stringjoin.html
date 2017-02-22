@@ -2,11 +2,11 @@
     String Join
     <br>
     <pre><code class="java" data-trim data-noescape>
-int[] nums = {1, 5, 7, 12, 5, 2, 7};
-StringBuilder stringBuilder = new StringBuilder(nums.length);
-for (int i = 0; i < nums.length; i++) {
-    stringBuilder.append(nums[i]);
-    if (i < nums.length - 1) {
+String[] names = {"John", "Josh", "Bob", "Alex"};
+StringBuilder stringBuilder = new StringBuilder(names.length);
+for (int i = 0; i < names.length; i++) {
+    stringBuilder.append(names[i]);
+    if (i < names.length - 1) {
         stringBuilder.append(", ");
     }
 }
